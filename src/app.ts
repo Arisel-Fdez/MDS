@@ -32,7 +32,7 @@ async function startServer() {
 
         // Iniciar el servidor Express
         app.listen(process.env.PORT || 3000, () => {
-            signale.success(`Server online on port ${process.env.PORT || 3000}`);
+            signale.success(`Server online on port ${process.env.PORT || 80}`);
         });
     } catch (error) {
         signale.error("Error starting the server:", error);
